@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$veterinary-primary: mat-palette($mat-grey, 50, 700, 100);
+
+$veterinary-accent:  mat-palette($mat-orange, A700);
+
+$veterinary-warn:    mat-palette($mat-red, 500);
+
+
+$veterinary-theme: mat-light-theme($veterinary-primary, $veterinary-accent, $veterinary-warn);
+
+@include angular-material-theme($veterinary-theme);
